@@ -1,0 +1,14 @@
+<view>
+  <l-search-bar l-container-class="search" placeholder="搜索" shape="circle" front-text="思明" />
+  <view class="course-list">
+    <block wx:for="{{courses}}" wx:key="id">
+      <l-card type="primary" plaintext="{{true}}" title="{{item.name}}" 
+      l-class="course" l-title-class="course-name">
+        <view class="course-description">
+          {{item.description}}
+        </view>
+      </l-card>
+    </block>
+    <view class="placeholder-bottom" />
+  </view>
+</view>

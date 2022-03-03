@@ -3,7 +3,6 @@
   "packOptions": {
     "ignore": []
   },
-  "miniprogramRoot": "miniprogram/",
   "compileType": "miniprogram",
   "projectname": "XMUCourses",
   "setting": {
@@ -21,9 +20,9 @@
     "scopeDataCheck": false,
     "uglifyFileName": false,
     "checkInvalidKey": true,
-    "checkSiteMap": true,
+    "checkSiteMap": false,
     "uploadWithSourceMap": true,
-    "compileHotReLoad": true,
+    "compileHotReLoad": false,
     "lazyloadPlaceholderEnable": false,
     "useMultiFrameRuntime": true,
     "useApiHook": true,
@@ -50,5 +49,6 @@
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "appid": "wx9705387a8d0deaea",
+  "libVersion": "2.19.2",
   "condition": {}
 }

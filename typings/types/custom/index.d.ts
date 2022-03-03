@@ -1,0 +1,1 @@
+/// <reference path="./courses.d.ts" />

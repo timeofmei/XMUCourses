@@ -1,15 +1,9 @@
 {
-  "name": "miniprogram-ts-less-quickstart",
+  "name": "xmucourses",
   "version": "1.0.0",
   "description": "",
-  "scripts": {
-  },
-  "keywords": [],
-  "author": "",
-  "license": "",
+  "main": "app.ts",
   "dependencies": {
-  },
-  "devDependencies": {
-    "miniprogram-api-typings": "^2.8.3-1"
+    "lin-ui": "^0.9.8"
   }
 }
