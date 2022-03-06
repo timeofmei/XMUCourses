@@ -2,7 +2,7 @@
   "name": "xmucourses",
   "version": "1.0.0",
   "description": "",
-  "main": "app.ts",
+  "main": "app.js",
   "dependencies": {
     "lin-ui": "^0.9.8"
   }

@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/add/add"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -9,8 +10,15 @@
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
+  "useExtendedLib": {
+    "weui": true
+  },
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
+    "l-radio": "miniprogram_npm/lin-ui/radio/index",
+    "l-radio-group": "miniprogram_npm/lin-ui/radio-group/index",
+    "l-input": "miniprogram_npm/lin-ui/input/index",
+    "l-button": "miniprogram_npm/lin-ui/button/index",
     "l-icon": "miniprogram_npm/lin-ui/icon/index",
     "l-search-bar": "miniprogram_npm/lin-ui/search-bar/index",
     "l-card": "miniprogram_npm/lin-ui/card/index"

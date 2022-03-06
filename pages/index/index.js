@@ -1,6 +1,12 @@
 Page({
   data: {
-    courses: <Course[]> []
+    courses: []
+  },
+
+  toAdd() {
+    wx.navigateTo({
+      url: '../add/add'
+    })
   },
 
   onLoad() {
@@ -8,7 +14,7 @@ Page({
   },
 
   onReady() {
-    let basic: Course[] = [
+    let basic = [
       {
         id: 0,
         name: "数理统计",
@@ -25,7 +31,7 @@ Page({
         description: "老师不是很帅"
       }
     ]
-    let courses: Course[] = [];
+    let courses = [];
     for (let i = 0; i < 15; i++) {
       courses.push({...basic[i % basic.length], id: i})
     }

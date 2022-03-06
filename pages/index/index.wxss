@@ -23,3 +23,14 @@
 .placeholder-bottom {
   height: 50rpx;
 }
+
+.jia-button {
+  background-color: white;
+  position: fixed;
+  right: 50rpx;
+  bottom: 150rpx;
+  margin: 10rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+}
