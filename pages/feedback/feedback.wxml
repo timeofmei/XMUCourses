@@ -1,0 +1,3 @@
+<l-capsule-bar disable-home="{{true}}" capsule-right-icon-path="/images/反馈.png"  title="阿莫伊甜蜜往事">
+  <text>pages/feedback/feedback.wxml</text>
+</l-capsule-bar>

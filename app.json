@@ -1,12 +1,15 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/add/add"
+    "pages/add/add",
+    "pages/feedback/feedback",
+    "pages/detail/detail"
   ],
   "window": {
+    "navigationStyle": "custom",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "情人谷餐厅",
+    "navigationBarTitleText": "阿莫伊甜蜜往事",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
@@ -15,6 +18,7 @@
   },
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
+    "l-capsule-bar": "miniprogram_npm/lin-ui/capsule-bar/index",
     "l-radio": "miniprogram_npm/lin-ui/radio/index",
     "l-radio-group": "miniprogram_npm/lin-ui/radio-group/index",
     "l-input": "miniprogram_npm/lin-ui/input/index",

@@ -40,10 +40,7 @@
     "disableUseStrict": false,
     "minifyWXML": true,
     "showES6CompileOption": false,
-    "useCompilerPlugins": [
-      "typescript",
-      "sass"
-    ],
+    "useCompilerPlugins": false,
     "ignoreUploadUnusedFiles": true
   },
   "simulatorType": "wechat",

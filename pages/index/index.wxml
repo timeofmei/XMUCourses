@@ -1,16 +1,22 @@
-<view>
-  <l-search-bar l-container-class="search" placeholder="搜索" shape="circle" front-text="思明" />
-  <view class="course-list">
-    <block wx:for="{{courses}}" wx:key="id">
-      <l-card type="primary" plaintext="{{true}}" title="{{item.name}}" l-class="course" l-title-class="course-name">
-        <view class="course-description">
-          {{item.description}}
-        </view>
-      </l-card>
-    </block>
-    <view class="placeholder-bottom" />
+<l-capsule-bar disable-back="{{true}}" home-page="/pages/feedback/feedback" capsule-right-icon-path="/images/反馈.png" title="阿莫伊甜蜜往事">
+  <view>
+    <l-search-bar l-icon-class="search-icon" l-container-class="search-container" l-class="search" placeholder="搜索" show-cancel="{{false}}" bind:linclear="searchEmpty" bind:linconfirm="search" shape="circle" />
+    <view class="course-list">
+      <block wx:for="{{courses}}" wx:key="id">
+        <l-button l-label-class="course-button" bind:lintap="toDetail" special="{{true}}">
+          <view class="course-container">
+            <l-card type="primary" plaintext="{{true}}" title="{{item.course_name}}" score="{{item.course_rate}}" color="{{item.course_color}}" l-class="course" l-title-class="course-name">
+              <view class="course-description">
+                {{item.course_teacher}}
+              </view>
+            </l-card>
+          </view>
+        </l-button>
+      </block>
+      <view class="placeholder-bottom" />
+    </view>
+    <l-button special="{{true}}" bind:lintap="toAdd">
+      <image class="jia-button" src="/images/jia.png" />
+    </l-button>
   </view>
-  <l-button special="{{true}}" bind:lintap="toAdd">
-    <image class="jia-button" src="/images/jia.png" />
-  </l-button>
-</view>
+</l-capsule-bar>

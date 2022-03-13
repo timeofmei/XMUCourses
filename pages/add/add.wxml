@@ -1,34 +1,36 @@
-<view class="form">
-<form catchsubmit="formSubmit" catchreset="formReset">
-  <view class="weui-cells__title">课程类型</view>
-  <view class="weui-cells weui-cells_after-title">
-    <view class="weui-cell weui-cell_input">
-      <picker bindchange="courseTypeChange" value="{{courseType}}" range="{{courseTypes}}">
-        {{courseTypes[courseType]}}
-      </picker>
-    </view>
+<l-capsule-bar home-page="/pages/feedback/feedback" capsule-right-icon-path="/images/反馈.png"  title="阿莫伊甜蜜往事">
+  <view class="form">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      <view class="weui-cells__title">课程类型</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <picker bindchange="courseTypeChange" value="{{courseType}}" range="{{courseTypes}}">
+            {{courseTypes[courseType]}}
+          </picker>
+        </view>
+      </view>
+      <view class="weui-cells__title">课程名</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input class="weui-input" />
+        </view>
+      </view>
+      <view class="weui-cells__title">老师</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input class="weui-input" />
+        </view>
+      </view>
+      <block wx:if="{{showFaculty}}">
+        <view class="weui-cells__title">学院</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <picker bindchange="facultyChange" value="{{faculty}}" range="{{faculties}}">
+              {{faculties[faculty]}}
+            </picker>
+          </view>
+        </view>
+      </block>
+    </form>
   </view>
-  <view class="weui-cells__title">课程名</view>
-  <view class="weui-cells weui-cells_after-title">
-    <view class="weui-cell weui-cell_input">
-      <input class="weui-input" />
-    </view>
-  </view>
-  <view class="weui-cells__title">老师</view>
-  <view class="weui-cells weui-cells_after-title">
-    <view class="weui-cell weui-cell_input">
-      <input class="weui-input" />
-    </view>
-  </view>
-  <block wx:if="{{showFaculty}}">
-  <view class="weui-cells__title">学院</view>
-  <view class="weui-cells weui-cells_after-title">
-    <view class="weui-cell weui-cell_input">
-      <picker bindchange="facultyChange" value="{{faculty}}" range="{{faculties}}">
-        {{faculties[faculty]}}
-      </picker>
-    </view>
-  </view>
-</block>
-</form>
-</view>
+</l-capsule-bar>
